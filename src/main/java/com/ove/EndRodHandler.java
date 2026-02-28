@@ -273,13 +273,14 @@ public class EndRodHandler {
             // 显示title文字 - 使用displayClientMessage显示在物品栏上方
             player.displayClientMessage(Component.literal("§4你被末地烛戳死了~"), true);
             
-            player.setHealth(0.0f);
+            // 造成足够伤害让玩家死亡
+            player.hurt(player.damageSources().magic(), Float.MAX_VALUE);
             return;
         }
 
         // 检查是否残血（半颗心 = 1点生命值）
         if (player.getHealth() <= 1.0f) {
-            // 残血使用末地烛直接死亡
+            // 残血使用末地烛造成足够伤害死亡
             LOGGER.info("残血使用末地烛死亡 - 玩家: {}", player.getName().getString());
             
             // 显示死亡消息给所有玩家
@@ -291,7 +292,8 @@ public class EndRodHandler {
             // 显示title文字
             player.displayClientMessage(Component.literal("§4你被末地烛戳死了~"), true);
             
-            player.setHealth(0.0f);
+            // 造成足够伤害让玩家死亡
+            player.hurt(player.damageSources().magic(), Float.MAX_VALUE);
             return;
         }
 

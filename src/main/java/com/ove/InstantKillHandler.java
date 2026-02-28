@@ -40,8 +40,8 @@ public class InstantKillHandler {
                         false
                     );
                     
-                    // 一击必杀：直接设置目标生命值为0
-                    targetPlayer.setHealth(0.0f);
+                    // 造成足够伤害让目标死亡（一击必杀）
+                    targetPlayer.hurt(targetPlayer.damageSources().playerAttack(player), Float.MAX_VALUE);
                     
                     LOGGER.info("毙命附魔生效，目标已被一击必杀");
                     
