@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "ove",
+	"version": "${version}",
+	"name": "Ove",
+	"description": "这一个模组原名：Original Version Erotic，给原版末地烛、水桶等其它东西修改了一下，并添加上了附魔，可以试着右键，附魔打其它玩家哦~等等。功能自己发现去！",
+	"authors": [
+		"Ohyf",
+		"FengMC-China"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/ohyfModMC/Minecraft_OveMod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/ove/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.ove.Ove"
+		],
+		"client": [
+			"com.ove.OveClient"
+		]
+	},
+	"mixins": [
+		"ove.mixins.json",
+		{
+			"config": "ove.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
