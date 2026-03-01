@@ -43,7 +43,7 @@ cd Minecraft_OveMod-main
 ```
 
 
-# English (But this mod does not support English)
+# English (But this mod does only support Chinese)
 # Minecraft Ove Mod
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
