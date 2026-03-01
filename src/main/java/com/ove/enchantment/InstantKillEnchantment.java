@@ -35,8 +35,8 @@ public class InstantKillEnchantment extends Enchantment {
     
     @Override
     public boolean canEnchant(ItemStack stack) {
-        // 只能附魔在木棍和末地烛上
-        return stack.getItem() == Items.STICK || stack.getItem() == Items.END_ROD;
+        // 只能附魔在木棍、末地烛和烈焰棒上
+        return stack.getItem() == Items.STICK || stack.getItem() == Items.END_ROD || stack.getItem() == Items.BLAZE_ROD;
     }
     
     @Override
