@@ -36,7 +36,7 @@ Ove Mod 是一个适用于 Minecraft Fabric 1.20.1 的模组，
 git clone https://github.com/ohyfModMC/Minecraft_OveMod.git
 
 # 进入目录
-cd directory
+cd Minecraft_OveMod-main
 
 # 构建
 ./gradlew build
@@ -82,7 +82,7 @@ The same as `Feature`.
 git clone https://github.com/ohyfModMC/Minecraft_OveMod.git
 
 # Enter the directory
-cd +directory
+cd Minecraft_OveMod-main
 
 # Build
 ./gradlew build
