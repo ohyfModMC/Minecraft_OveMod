@@ -3,12 +3,8 @@
 	"package": "com.ove.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-<<<<<<< HEAD
 		"ExampleMixin",
 		"PlayerDeathMessageMixin"
-=======
-		"ExampleMixin"
->>>>>>> 92730e58fb67986325b1b43031d4aa7dd72a0995
 	],
 	"injectors": {
 		"defaultRequire": 1

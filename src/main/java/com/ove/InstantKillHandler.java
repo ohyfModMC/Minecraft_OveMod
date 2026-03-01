@@ -32,7 +32,6 @@ public class InstantKillHandler {
                     LOGGER.info("毙命附魔触发 - 玩家: {}, 目标: {}", 
                         player.getName().getString(), targetPlayer.getName().getString());
                     
-<<<<<<< HEAD
                     // 造成足够伤害让目标死亡（一击必杀）
                     targetPlayer.hurt(targetPlayer.damageSources().playerAttack(player), Float.MAX_VALUE);
                     
@@ -54,19 +53,6 @@ public class InstantKillHandler {
                         );
                     }
                     
-=======
-                    // 显示击杀消息给所有玩家
-                    String weaponName = (heldItem.getItem() == Items.STICK) ? "木棍" : "末地烛";
-                    player.getServer().getPlayerList().broadcastSystemMessage(
-                        Component.literal(targetPlayer.getName().getString() + " 被 " +
-                            player.getName().getString() + " 的" + weaponName + "戳死了~"),
-                        false
-                    );
-                    
-                    // 造成足够伤害让目标死亡（一击必杀）
-                    targetPlayer.hurt(targetPlayer.damageSources().playerAttack(player), Float.MAX_VALUE);
-                    
->>>>>>> 92730e58fb67986325b1b43031d4aa7dd72a0995
                     LOGGER.info("毙命附魔生效，目标已被一击必杀");
                     
                     // 返回成功，阻止原版伤害计算
@@ -78,7 +64,6 @@ public class InstantKillHandler {
         });
         
         LOGGER.info("毙命附魔事件处理器注册完成");
-<<<<<<< HEAD
         
         // 注册普通末地烛攻击玩家事件处理器
         registerEndRodAttackHandler();
@@ -127,7 +112,5 @@ public class InstantKillHandler {
         });
         
         LOGGER.info("普通末地烛攻击事件处理器注册完成");
-=======
->>>>>>> 92730e58fb67986325b1b43031d4aa7dd72a0995
     }
 }
